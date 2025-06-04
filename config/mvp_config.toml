@@ -1,0 +1,30 @@
+# MVP Configuration for OpenManus
+# Copy this to config.toml and update with your API key
+
+[llm]
+model = "gpt-4o"
+base_url = "https://api.openai.com/v1"
+api_key = "YOUR_API_KEY_HERE"
+max_tokens = 4096
+temperature = 0.0
+api_type = "openai"
+api_version = ""
+
+# Alternative: Anthropic Claude
+# [llm]
+# model = "claude-3-5-sonnet-20241022"
+# base_url = "https://api.anthropic.com/v1/"
+# api_key = "YOUR_ANTHROPIC_API_KEY"
+# max_tokens = 8192
+# temperature = 0.0
+# api_type = "anthropic"
+# api_version = ""
+
+# Alternative: Local Ollama
+# [llm]
+# api_type = "ollama"
+# model = "llama3.2"
+# base_url = "http://localhost:11434/v1"
+# api_key = "ollama"
+# max_tokens = 4096
+# temperature = 0.0

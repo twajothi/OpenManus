@@ -1,0 +1,9 @@
+# MVP Requirements - Core dependencies only
+pydantic~=2.10.6
+openai~=1.66.3
+tenacity~=9.0.0
+pyyaml~=6.0.2
+loguru~=0.7.3
+aiofiles~=24.1.0
+colorama~=0.4.6
+tomli>=2.0.0
