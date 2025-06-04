@@ -1,8 +1,14 @@
 import asyncio
 import sys
+import os
 from pathlib import Path
-from app.agent.mvp_manus import MVPManus
-from app.logger import logger
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from mvp.app.agent.mvp_manus import MVPManus
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s | %(levelname)s | %(message)s')
+logger = logging.getLogger(__name__)
 
 async def main():
     """MVP entry point for OpenManus"""

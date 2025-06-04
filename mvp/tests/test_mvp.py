@@ -5,9 +5,9 @@ import os
 from pathlib import Path
 import sys
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '../..'))
 
-from app.agent.mvp_manus import MVPManus
+from mvp.app.agent.mvp_manus import MVPManus
 from app.tool.python_execute import PythonExecute
 from app.tool.str_replace_editor import StrReplaceEditor
 from app.tool.ask_human import AskHuman
